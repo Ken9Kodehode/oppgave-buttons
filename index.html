@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="utf-8">
+    <title>Endret litt og laget egen css fil ved sidenav</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <form action="URL-adresse">
+
+        <h1>Her er tolkningen min av oppgave motatt 03.02.2022</h1>
+        <p> Prøv å sette farge på siden, stil for overskrift og marger som passer. 
+	Rydd gjerne opp koden, slik den ser bedre ut. du kan legge inn flere p tagg eller div tagg om du vil</p>
+
+        <select name=" velgLand" required>.
+            <option value="">Velg land</option>
+            <option value="Polen">Polen</option>
+            <option value="Italia">Italia</option>
+            <option value="Hellas">Hellas</option>
+            <option value="Rogaland">Rogaland</option>
+        </select>
+        <button>OK</button>
+        <br>
+
+        <h2>Velg favorittfargen din</h2>
+	<p>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+        <input type="submit">
+	</p>
+        <h2>Still inn volumet</h2>
+	<p>
+        <label for="vol">Volume (mellom 0 og 100 dB):</label>
+        <input type="range" id="vol" name="vol" min="0" max="100">
+        <br>
+	</p>
+    
+    <!--Fornavn & Etternavn-->
+        <h2>Skriv inn fornavn først og så etternavn</h2>
+        <label for="fname">Fornavn: </label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Etternavn: </label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+    
+    
+        <!--Fødselsdato & email-->
+        <h2>Skriv inn fødelsdatoen din</h2>
+        <label for="birthday">Fødselsdato:</label>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <input type="date" id="birthday" name="birthday">
+        <input type="submit"><br><br>
+            
+        <!--Passord-->
+        <h2>Sett inn et passord</h2>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+        <input type="submit">
+        
+        <!--Navn-->
+        <input type=" text" name="navn" placeholder="Hva heter du?" required><br>
+        
+        <!--Drikke-->
+        <label>Hva ønsker du å drikke til maten?</label>
+        <input type="radio" value="brus" name="rbDrikke"><span>Brus</span>
+        <input type="radio" value="brus" name="rbDrikke"><span>Brus</span>
+        <input type="radio" value="brus" name="rbDrikke"><span>Brus</span>
+
+        <input type="checkbox">
+
+
+    </form>
+</body>
+
+</html>
